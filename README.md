@@ -4,6 +4,7 @@ Este es un proyecto de Electrocardiograma creado con un microprocesador PIC18F45
 This is a ECG Project created with a PIC18F4550 microprocessor
 
 ESPAÑOL:
+
 Construcción de un Electrocardiograma:
 
 1) Obtención de la señal: Las formas de obtener una señal son llamadas ´Derivaciones´ dado el lugar en donde se colocarán los electrodos. Para este proyecto se utilizará la Derivacion Unipolar (Ver imagen DerivacionUnipolar.jpg), la cual consta de obtener la señal de tres partes: 
@@ -23,6 +24,9 @@ Construcción de un Electrocardiograma:
 6) Código de adquisición de datos: Para adquirir los datos que serán leidos por el microprocesador (véase código ECG.c) se utilizarán las librerías de lectura de USB para C. Estas permitirán obtener en un ordenador las lecturas en formato de texto (.txt) que podrán ser graficadas luego en Matlab. Para cargar al microprocesador con el código se utiliza el ´Pickit2 Programmer´.
 
 7) Código de filtro digital FIR: Para eliminar el ruido que la línea de transmisión añade (En este caso 50Hz) se utiliza un filtro digital (véase código FIR.m). Este procedimiento se realiza después de obtener la señal, y cuyo filtrado corresponde a un código en Matlab. 
+
+* El resultado del filtrado en Matlab puede observarse en ResponseFilter.jpg
+* El resultado del circuito en protoboard puede observarse en FinalProtoboard.jpg
 
 ENGLISH:
 
@@ -45,3 +49,6 @@ Building an ECG:
 6) Data acquisition code: In order to acquire the data that will be read by the microprocessor (see ECG.c code), the USB reading libraries for C will be used. These will allow reading on a computer to be obtained in text format (.txt) that can be graphed later in Matlab. To load the microprocessor with the code, the'Pickit2 Programmer' is used.
 
 7) FIR digital filter code: To eliminate the noise that the transmission line adds (In this case 50Hz) a digital filter is used (see FIR.m code). This procedure is performed after obtaining the signal, and whose filtering corresponds to a code in Matlab.
+
+* The result of the filtering in Matlab can be observed in ResponseFilter.jpg
+* The result of the circuit in protoboard can be observed in FinalProtoboard.jpg
